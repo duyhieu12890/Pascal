@@ -1,0 +1,4 @@
+==========Begin Write List Students==========
+                        Ho ten                      Que quan               Diem trung binh            Xep loai
+1.     Nguyen Duy Hieu           Thai Binh                7.00         B
+==========End Write List Students============

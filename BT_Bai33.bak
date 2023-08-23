@@ -1,0 +1,16 @@
+uses crt;
+var A:array[1..100] of longint;
+        i,n:integer;
+        min:longint;
+begin
+        write('co may so nguyen:');readln(n);
+        for i:=1 to n do
+                begin
+                        write ('so thu ',i,' ');
+                        readln(a[i]);
+                end;
+        min:=high(longint);
+        for i:=1 to n do
+            if a[i] <min  then min:=a[i];
+        write('so nho nhat vua nhap la:');readln;
+end.

@@ -1,0 +1,8 @@
+uses crt;
+var f1,f2:text;
+begin
+        write('n=');readln(n);
+        for i:=1 to n do A[i]:=i;
+        repeat
+
+        until i = 0;

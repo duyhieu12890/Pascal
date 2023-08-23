@@ -1,0 +1,18 @@
+uses crt;
+var A:array[1..100] of longint;
+        i,n:integer;
+        x:longint;
+begin
+        write('co may so nguyen:');readln(n);
+        for i:=1 to n do
+                begin
+                        write ('so thu ',i,' ');
+                        readln(a[i]);
+                end;
+        write('so nguyen x:');readln(x);
+        write('vi tri can chen x:');readln(vt);
+        n:=n+1;
+        for i:=n downto vt+1 do A[i]=A[i-1];
+        A[vt]:=x;
+        for i:=1 to n do write(A[i],' ')readln;
+end.

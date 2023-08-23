@@ -1,0 +1,23 @@
+uses crt;
+var n,j,i,k:integer;
+f1,f2:text;
+A:array[1..50] of integer;
+B:array[1..50] of integer;
+begin
+        assign(f1,'SUBSET.INP');reset(f1);
+        assign(f2,'SUBSET.OUT');rewrite(f2);
+        readln(f1,n,k);
+        for i:=1 to n do read(f1,B[i]);
+        for i:=1 to k do A[i]:=i;
+        repeat
+              for j:=1 to k do write(b[A[j]]);
+              i:=k;
+              while (i>0) and (A[i]=n-k+i) do i:=i-1;
+              if i>0 then
+              begin
+                    A[i]:=A[i]+1;
+                    for j:=i+1 to k do A[j]:=A[j-1]+1;
+              end;
+        until i=0;
+
+end.

@@ -1,0 +1,24 @@
+uses crt;
+var j,max,i,k:integer;
+A:array[1..100] of integer;
+f1,f2:text;
+begin
+     assign(f1,'SUBSET.INP');reset(f1);  //5 3
+     assign(f2,'SUBSET.OUT');rewrite(f2);
+     readln(f1,max,k); //max=5  k=3
+     for j:=1 to k do A[j]:=j; //A[1]=1 A[2]=2 A[3]=3
+     repeat
+        for j:=1 to k do write(f2,A[j]);
+        writeln(f2);
+        i:=k;
+        while (i>0) and (A[i] = max-k+i) do i:=i-1;
+        if i>0 then
+        begin
+                A[i]:=A[i]+1;
+                for j:=i+1 to k do
+                a[j]:=A[j-1]+1;
+        end;
+     until i=0;
+     close(f1);
+     close(f2);
+end.

@@ -1,0 +1,27 @@
+uses crt;
+var A:array[1..50,1..50] of integer;
+        m,n,i,j:integer;
+        tongchinh:longint;
+begin
+    write('moi ban nhap m dong m cot:');readln(m);
+    for i:=1 to m do
+    for j:=1 to m do
+        begin
+                write('A[',i,',',j,']');
+                readln(A[i,j]);
+        end;
+    writeln('mang vua nhap la:');
+    for i:=1 to m do
+    begin
+    for j:=1 to m do write(A[i,j],' ');
+    writeln;
+    end;
+    readln;
+    {
+    tongchinh:=0;
+    for i:=1 to m do
+    for j:=1 to m do
+    if i = j then tongchinh:=tongchinh+A[i,j];
+    write(tongchinh);
+    readln;  }
+end.

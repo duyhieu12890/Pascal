@@ -1,0 +1,23 @@
+uses crt;
+var a:array[1..50,1..50] of integer; // Khai Bao gom hang doc va hang cot
+
+{dau tien nhap theo dong r moi dong tiep theo}
+//Vi du
+begin
+        writeln('moi ban nhap so dong:');readln(n); //so dong
+        writeln('moi ban nhap so cot:');readln(j); //so cot;
+        for i:=1 to n do
+        for j:=1 to n do
+                begin
+                        write('nhap [',i,',',j,']')
+                        readln(a[i,j]);
+                end;
+        writeln('mang 2 chieu vua nhap la:');
+        for i:=1 to n do
+        begin
+                for j:=1 to m do write(a[i,j],' ');
+                writeln;
+        end;
+        readln;
+end.
+

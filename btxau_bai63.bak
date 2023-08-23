@@ -1,0 +1,10 @@
+uses crt;
+var s:string;i:byte;
+begin
+        write('nhap vao xau bat ki');readln(s);
+        i:=1;
+        while i <= length(s) do
+        if S[i] in ['0'..'9'] then delete(s,i,1)
+        else i:=i+1;
+        write('xau do sau khi xoa so la:',s);readln;
+end.

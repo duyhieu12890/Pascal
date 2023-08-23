@@ -1,0 +1,42 @@
+uses crt;
+var f1,f2:text;
+        n,tam,i,j,k:integer;
+        A:array[1..100] of integer;
+        B:array[1..100] of integer;
+begin
+        assign(f1,'INPUT.DAT');reset(f1);
+        assign(f2,'OUTPUT.DAT');rewrite(f2);
+        i:=1;
+        while not EOF(f1) do
+        begin
+                readln(f1,A[i]);
+                i:=i+1;
+        end;
+        n:=i-1;
+        j:=0;
+        for i:=1 to n do
+        write(a[i],' ');
+        for i:=2 to n-1 do
+        if (A[i-1]+A[i+1])=A[i] then
+        begin
+            j:=j+1;
+            B[j]:=A[i];
+            writeln(A[i]);
+        end;
+        writeln(j);
+        readln;
+
+        readln;
+        for i:=1 to j-1 do
+        for k:=i+1 to j do
+        if B[k] < B[i] then
+        begin
+        tam:=B[k];
+        B[k]:=B[i];
+        B[i]:=tam;
+        end;
+        for i:=1 to j do
+        writeln(f2,B[i]);
+        close(f1);
+        close(f2);
+end.
