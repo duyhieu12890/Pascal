@@ -41,7 +41,7 @@ begin
         end else
         begin  //Tam giac thuong
             write('dien tich tam giac la:',(a+b+c)/2);
-
+            
         end;
     end else write('het cuu'); 
     readln;
